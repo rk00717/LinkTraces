@@ -1,0 +1,97 @@
+@import url("./value.css");
+@import url('https://fonts.googleapis.com/css2?family=Kite One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Kite One', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(158,210,190,1) 0%, rgba(200,228,178,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50%;
+}
+
+.hero_card{
+    margin: 50px 0;
+}
+
+.hero_name{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+.hero_image{
+    margin: auto;
+    display: flex;
+
+    height: 100px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+    background-color: var(--accent_1);
+
+    color: var(--primary);
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+
+.links{
+    text-decoration: none;
+    color: #252525b6;
+}
+
+.link_button{
+    margin-bottom: 10px;
+    padding: 1em 2em;
+
+    border-radius: 10em;
+    border: 1px solid var(--accent_1);
+    /* background-color: var(--secondary); */
+    overflow: hidden;
+
+    min-width: 300px;
+    max-width: 350px;
+    
+    box-shadow: 0 0 0 0 var(--accent_1);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.link_button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 var(--accent_1);
+}
+
+.link_button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 var(--accent_1);
+}
+
+.footer{
+    margin: 50px;
+    text-align: center;
+    bottom: 0;
+
+    color: var(--accent_1);
+}
