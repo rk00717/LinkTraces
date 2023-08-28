@@ -10,7 +10,7 @@
 
 body{
     min-height: 100vh;
-    background: linear-gradient(0deg, rgba(158,210,190,1) 0%, rgba(200,228,178,1) 100%);
+    background: linear-gradient(0deg, var(--accent_1) 0%, var(--primary) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -51,22 +51,38 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 42px;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    box-shadow:
+    13.6px 10.9px 21.5px rgba(0, 0, 0, 0.11),
+    18.3px 14.8px 52.2px rgba(0, 0, 0, 0.075),
+    21.4px 17.2px 111.9px rgba(0, 0, 0, 0.051),
+    124px 100px 340px rgba(0, 0, 0, 0.045);
 }
 
-.links{
-    text-decoration: none;
-    color: #252525b6;
+.hero_image>img{
+    height: 100px;
+    width: 100px;
+}
+
+.link_container{
+    position: relative;
 }
 
 .link_button{
     margin-bottom: 10px;
     padding: 1em 2em;
-
+    display: block;
+    
+    color: #252525b6;
+    background-color: transparent;
+    
     border-radius: 10em;
     border: 1px solid var(--accent_1);
-    /* background-color: var(--secondary); */
     overflow: hidden;
-
+    
     min-width: 300px;
     max-width: 350px;
     
@@ -77,6 +93,35 @@ body{
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
+
+.link_copy_button{
+    padding: 1em 2em;
+    position: absolute;
+    top: .9em;
+    right: .9em;
+    
+    color: #252525b6;
+    background-color: transparent;
+    
+    border-radius: 10em;
+    border: 1px solid var(--accent_1);
+
+    width: 50px;
+    height: 20px;
+    
+    box-shadow: 0 0 0 0 var(--accent_1);
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.link_copy_button::before{
+    content: 'copy';
+    position: absolute;
+    left: 1em;
+    top: .2em;
+}
+
 
 .link_button:hover {
     transform: translateY(-4px) translateX(-2px);

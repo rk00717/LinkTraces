@@ -1,7 +1,12 @@
 :root{
-    --primary: #C8E4B2;
+    /* --primary: #C8E4B2;
     --secondary: #9ED2BE;
     --accent_1: #7EAA92;
+    --accent_2: #FFD9B7;
+    --font_color: #fff; */
+    --primary: #b7b2e4;
+    --secondary: #a69ed2;
+    --accent_1: #615d81;
     --accent_2: #FFD9B7;
     --font_color: #fff;
 }
